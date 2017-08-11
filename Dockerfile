@@ -11,7 +11,3 @@ RUN rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm 
 
 ENV PATH=/opt/puppetlabs/server/bin:/opt/puppetlabs/puppet/bin:/opt/puppetlabs/bin:$PATH
 
-ENTRYPOINT ["/opt/puppetlabs/bin/puppet"]
-CMD ["agent", "--verbose", "--onetime", "--no-daemonize", "--summarize" ]
-
-COPY Dockerfile /
